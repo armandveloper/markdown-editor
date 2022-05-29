@@ -3,7 +3,8 @@ import MarkdownIt from 'markdown-it/'
 import { Editor, Preview } from '@/components'
 
 const md = new MarkdownIt({
-  linkify: true
+  linkify: true,
+  typographer: true
 })
 
 function App () {
