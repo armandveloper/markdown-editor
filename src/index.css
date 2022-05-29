@@ -52,6 +52,22 @@
   blockquote {
     @apply border-l-4 border-gray-300 py-3 px-5 mb-5;
   }
+  pre, code {
+    @apply font-sourceCode;
+  }
+  code {
+    @apply bg-neutral-700 text-neutral-100 px-1 py-[2px] rounded-sm;
+    font-size: 90%;
+  }
+  pre {
+    @apply bg-neutral-800 mb-4 p-4 overflow-auto rounded-md leading-normal
+    ;
+  }
+  pre code {
+    @apply bg-transparent p-0 whitespace-pre break-normal overflow-visible;
+    font-size: 100%;
+    word-wrap: normal;
+  }
 }
 
 @tailwind components;
