@@ -1,5 +1,7 @@
+import { TabBar } from '../tab-bar'
+
 type Props = {
-  result: string;
+  result: string
 }
 
 export const Preview = (props: Props) => {
@@ -7,9 +9,7 @@ export const Preview = (props: Props) => {
 
   return (
     <section className="bg-[#15161a] text-white h-full flex flex-col">
-    <header className="px-4 py-3 bg-[#1e1f23]">
-      <h2 className="uppercase">Preview</h2>
-    </header>
+    <TabBar title="Preview" />
     <div className="px-4 py-5" dangerouslySetInnerHTML={{ __html: result }} />
   </section>
   )

@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { TabBar } from '../tab-bar'
 
 type Props = {
   onChange: (value: string) => void
@@ -15,9 +16,7 @@ export const Editor = (props: Props) => {
   }
   return (
     <section className="bg-[#15161a] text-white h-full flex flex-col">
-      <header className="px-4 py-3 bg-[#1e1f23]">
-        <h2 className="uppercase">Markdown</h2>
-      </header>
+      <TabBar title="Markdown" />
       <textarea
         className="w-full block h-56 bg-inherit font-sourceCode flex-1 px-4 py-5 resize-none focus:outline-none"
         placeholder="Your code here"
