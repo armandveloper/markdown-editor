@@ -10,6 +10,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "highlight.js": "^11.5.1",
     "markdown-it": "^13.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
