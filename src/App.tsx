@@ -2,7 +2,9 @@ import * as React from 'react'
 import MarkdownIt from 'markdown-it/'
 import { Editor, Preview } from '@/components'
 
-const md = new MarkdownIt()
+const md = new MarkdownIt({
+  linkify: true
+})
 
 function App () {
   const [result, setResult] = React.useState('')
