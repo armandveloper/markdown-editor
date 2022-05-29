@@ -37,6 +37,9 @@
   hr {
     @apply my-5 border-gray-300;
   }
+  strong, em {
+    @apply text-sm;
+  }
 }
 
 @tailwind components;
