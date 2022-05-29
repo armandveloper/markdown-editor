@@ -40,6 +40,15 @@
   strong, em {
     @apply text-sm;
   }
+  ul, ol {
+    @apply mb-3 pl-10;
+  }
+  ul {
+    @apply list-disc;
+  }
+  ol {
+    @apply list-decimal;
+  }
 }
 
 @tailwind components;
