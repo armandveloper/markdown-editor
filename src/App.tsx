@@ -13,9 +13,8 @@ function App () {
   }
 
   return (
-    <div className="h-screen md:grid md:grid-cols-[1fr_1px_1fr]">
+    <div className="h-screen divide-y divide-gray-300 md:grid md:grid-cols-2 md:divide-x md:divide-y-0">
       <Editor onChange={handleChange} />
-      <hr className='text-gray-400 bg-current h-full' />
       <Preview result={result} />
     </div>
   )
