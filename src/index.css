@@ -49,6 +49,9 @@
   ol {
     @apply list-decimal;
   }
+  blockquote {
+    @apply border-l-4 border-gray-300 py-3 px-5 mb-5;
+  }
 }
 
 @tailwind components;
