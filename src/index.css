@@ -34,6 +34,9 @@
   p {
     @apply mb-4 leading-normal;
   }
+  hr {
+    @apply my-5 border-gray-300;
+  }
 }
 
 @tailwind components;
