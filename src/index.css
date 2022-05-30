@@ -68,6 +68,18 @@
     font-size: 100%;
     word-wrap: normal;
   }
+  table {
+    @apply mb-5 w-full;
+  }
+  th, td {
+    @apply p-2 border-b-gray-400;
+  }
+  th {
+    @apply border-b-2;
+  }
+  td {
+    @apply border-b;
+  }
 }
 
 @tailwind components;
