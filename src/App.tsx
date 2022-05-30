@@ -1,5 +1,6 @@
 import * as React from 'react'
 import MarkdownIt from 'markdown-it'
+import emoji from 'markdown-it-emoji'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/github-dark.css'
 import { Editor, Preview } from '@/components'
@@ -15,7 +16,7 @@ const md = new MarkdownIt({
   },
   linkify: true,
   typographer: true
-})
+}).use(emoji)
 
 function App () {
   const [result, setResult] = React.useState('')
