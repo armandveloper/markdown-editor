@@ -11,7 +11,7 @@ export const Preview = (props: Props) => {
   return (
     <EditorBox>
       <TabBar title="Preview" />
-      <div className="px-4 py-5" dangerouslySetInnerHTML={{ __html: result }} />
+      <div data-testid="preview" className="px-4 py-5" dangerouslySetInnerHTML={{ __html: result }} />
     </EditorBox>
   )
 }

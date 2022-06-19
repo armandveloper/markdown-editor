@@ -19,6 +19,7 @@ export const Editor = (props: Props) => {
     <EditorBox>
       <TabBar title="Markdown" />
       <textarea
+        data-testid="editor"
         className="w-full block h-56 bg-inherit font-sourceCode flex-1 px-4 py-5 resize-none focus:outline-none"
         placeholder="Your code here"
         value={value}
